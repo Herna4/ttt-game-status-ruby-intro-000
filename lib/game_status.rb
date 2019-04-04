@@ -79,10 +79,10 @@ def winner(board)
     (won?(board)).each do |element|
       position_array << board[element]
     end
-    all_X = position_array.all? do|element|
+    choice_X = position_array.all? do|element|
         element == "X"
     end
-    if (all_X )
+    if (choice_X )
       return "X"
     else
       return "O"
